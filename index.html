@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Plan</title>
+    <!-- Link to the Montserrat font family from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <h1>Trading Plan</h1>
+
+    <!-- Section for displaying trading account details -->
+    <div class="section">
+        <h3>Account Size: $5k</h3>
+
+        <!-- Trading rules list -->
+        <div>
+            <h3> Some Trading Rules</h3>
+            <ol>
+                <li>Don't breach daily drawdown.</li>
+                <li>Don't breach overall account drawdown.</li>
+                <li>Always use stop-loss orders to limit potential losses on each trade. </li>
+                <li>Determine the appropriate amount of capital to risk on each trade based on your overall portfolio and risk tolerance.</li>
+                <li>Don't trade excessively. Stick to your trading plan and only enter trades that meet your criteria.</li>
+                <li>Stay calm and avoid making impulsive decisions based on emotions.</li>
+            </ol>
+        </div>
+
+        <!-- Specific rules to follow while trading -->
+        <div>
+            <h3>My Personal Rules</h3>
+            <ol>
+                <li>Every trade should be part of a well-defined strategy with clear entry, exit, and risk management rules.</li>
+                <li>Understand that losses are part of trading. </li>
+                <li> Avoid making impulsive trades or deviating from your established trading strategy based on short-term market movements or emotions.</li>
+                <li>Record every trade, including the rationale, outcome, and any lessons learned. Review your journal regularly to identify patterns and improve your strategy.</li>
+                <li>Establish achievable trading goals and benchmarks. Aim for steady progress rather than unrealistic returns.</li>
+            </ol>
+        </div>
+
+        <!-- List of currency pairs to trade -->
+        <div>
+            <h3>Pairs I Trade</h3>
+            <ol>
+                <li>GBPUSD</li>
+                <li>XAUUSD</li>
+                <li>NZDUSD</li>
+                <li>EURUSD</li>
+                <li>EURGBP</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <h2>Disclaimer</h2>
+        <p>These rules are based on my personal experience and perspective as a trader. They are meant to serve as general guidelines and may not be suitable for everyone. Trading involves risks, and it's important to do your own research and consult with a financial advisor before making any trading decisions.</p>
+    </div>
+
+    <!-- Trading journal section -->
+    <div id="journal" class="section">
+        <h3>Trading Journal</h3>
+        <p>Record your trades, thoughts, and strategies here:</p>
+        <textarea id="entryText" placeholder="Enter your journal entry..."></textarea>
+        <input type="file" id="entryImage" accept="image/*">
+        <button type="button" onclick="saveEntry()">Save Entry</button>
+
+        <!-- Container for dynamically added journal entries -->
+        <div id="entries"></div>
+    </div>
+ 
+    <script src="scripts.js"></script>
+   
+</body>
+</html>
